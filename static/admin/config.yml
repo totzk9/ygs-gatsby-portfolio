@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: totzk9/ygs-gatsby-portfolio
+  branch: develop
+
+media_folder: content/assets
+public_folder: /assets
+
+collections:
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'content/projects'
+    create: true
+    slug: 'index'
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Short Title', name: 'shortTitle', widget: 'string' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Color', name: 'color', widget: 'string' }
+      - { label: 'Cover Photo', name: 'cover', widget: image }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

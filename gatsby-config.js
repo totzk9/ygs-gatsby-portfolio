@@ -4,7 +4,7 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Jodie - Gatsby Starter Portfolio`,
+    siteTitleAlt: `You Got Spotted Photography Cebu`,
   },
   plugins: [
     {
@@ -27,30 +27,30 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `2315642426`,
+        username: `7889238519`,
       },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jodie - @lekoarts/gatsby-theme-jodie`,
-        short_name: `jodie`,
-        description: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+        name: `You Got Spotted Photography Cebu`,
+        short_name: `YGS`,
+        description: `You Got Spotted Photography very own website to showcase our portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#b75e09`,
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
+            src: `/ygs-logo_192x192.jpg`,
             sizes: `192x192`,
-            type: `image/png`,
+            type: `image/jpg`,
           },
           {
-            src: `/android-chrome-512x512.png`,
+            src: `/ygs-logo_512x512.jpg`,
             sizes: `512x512`,
-            type: `image/png`,
+            type: `image/jpg`,
           },
         ],
       },
